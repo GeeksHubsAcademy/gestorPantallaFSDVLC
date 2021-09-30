@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+    <section id="1">
+        <div class="diapositiva1">
+            <img class="pic" onClick='cambiarPantalla("2")' src="img/pocoyo.jpg" alt="pocoyo"/>
+        </div>
+    </section>
+
+    <section id="2" style="display:none">
+        <div class="diapositiva2">
+            <img class="pic" onClick='cambiarPantalla("3")' src="img/shaggy.png" alt="shaggy"/>
+        </div>
+    </section>
+
+    <section id="3" style="display:none">
+        <div class="diapositiva3">
+            <img class="pic" onClick='cambiarPantalla("4")' src="img/goku.png" alt="goku"/>
+        </div>
+    </section>
+
+    <section id="4" style="display:none">
+        <div class="diapositiva4">
+            <img class="pic" onClick='cambiarPantalla("1")' src="img/robot.jpg" alt="robot"/>
+        </div>
+    </section>
+    
+    <script src="js/principal.js"></script>
+</body>
+</html>
