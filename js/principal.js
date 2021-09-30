@@ -1,4 +1,27 @@
 
+//Declaracion de la clase
+
+class Coche {
+
+    constructor(marca, modelo, velocidad){
+        this.marca = marca,
+        this.modelo = modelo,
+        this.velocidad = velocidad
+    }
+
+
+}
+
+let c1 = new Coche("Mercedes","Clase A", 0);
+let c2 = new Coche("Ford","Probe",0);
+
+let coche1 = "";
+let coche2 = "";
+
+let traductorCoches = {
+    "mercedes" : c1,
+    "ford" : c2
+}
 
 const cambiarPantalla = (pantallaDestino) => {
 
@@ -17,6 +40,27 @@ const cambiarPantalla = (pantallaDestino) => {
     for (let cadaPosicion of arrayDeFases) {
         
         document.getElementById(cadaPosicion).style.display = "none";
+
+    }
+    
+}
+
+const seleccionarCoche = (cocheElegido) => {
+
+    if(coche1 != ""){
+        coche2 = traductorCoches[cocheElegido];
+
+        console.log("El coche 1 es .... ",coche1);
+        console.log("El coche 2 es .... ",coche2);
+        
+        setTimeout(()=>{
+            cambiarPantalla("3");
+        },500)
+        
+        
+    } else {
+
+        coche1 = traductorCoches[cocheElegido];
 
     }
     
